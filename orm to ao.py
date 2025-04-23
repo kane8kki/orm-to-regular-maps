@@ -1,5 +1,5 @@
 from PIL import Image
-orm = int(input("ao-1, roughness-2, metalness-3")
+orm = int(input("ao-1, roughness-2, metalness-3"))
 if orm == 1: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
     # Charge l'image ORM
@@ -13,6 +13,7 @@ if orm == 1:
 
     # Sauvegarde l'image AO
     ao_image.save("texture_ao.png")
+    print("ambient occlusion map saved !")
     
 if orm == 2: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
@@ -27,6 +28,7 @@ if orm == 2:
 
     # Sauvegarde l'image AO
     ao_image.save("texture_roughness.png")
+    print("roughmap saved !")
 
 if orm == 3: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
@@ -41,6 +43,7 @@ if orm == 3:
 
     # Sauvegarde l'image AO
     ao_image.save("texture_metalness.png")
+    print("metalmap saved !")
 
 else : 
     print("error, not correct value")
