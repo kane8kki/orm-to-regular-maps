@@ -1,5 +1,6 @@
 from PIL import Image
 orm = int(input("ao-1, roughness-2, metalness-3"))
+saved = 0
 if orm == 1: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
 
