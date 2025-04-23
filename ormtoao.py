@@ -2,7 +2,7 @@ from PIL import Image
 orm = int(input("ao-1, roughness-2, metalness-3"))
 if orm == 1: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
-    # Charge l'image ORM
+
     orm_image = Image.open(texture_name)
 
     # Sépare les canaux R, G, B
