@@ -14,6 +14,7 @@ if orm == 1:
     # Sauvegarde l'image AO
     ao_image.save("texture_ao.png")
     print("ambient occlusion map saved !")
+    saved = 1
     
 if orm == 2: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
@@ -29,6 +30,7 @@ if orm == 2:
     # Sauvegarde l'image AO
     ao_image.save("texture_roughness.png")
     print("roughmap saved !")
+    saved = 1
 
 if orm == 3: 
     texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
@@ -44,6 +46,8 @@ if orm == 3:
     # Sauvegarde l'image AO
     ao_image.save("texture_metalness.png")
     print("metalmap saved !")
+    saved = 1
 
 else : 
-    print("error, not correct value")
+    if not saved == 1:
+        print("error, not correct value")
