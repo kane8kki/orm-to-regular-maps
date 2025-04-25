@@ -1,8 +1,8 @@
 from PIL import Image
-orm = int(input("ao-1, roughness-2, metalness-3"))
+orm = int(input("ao-1, roughness-2, metalness-3 : "))
 saved = 0
 if orm == 1: 
-    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
+    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png : ")
 
     orm_image = Image.open(texture_name)
 
@@ -18,7 +18,7 @@ if orm == 1:
     saved = 1
     
 if orm == 2: 
-    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
+    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png : ")
     # Charge l'image ORM
     orm_image = Image.open(texture_name)
 
@@ -34,7 +34,7 @@ if orm == 2:
     saved = 1
 
 if orm == 3: 
-    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png")
+    texture_name = input("texture name (must be in the same directory as the program) ex : texture.png : ")
     # Charge l'image ORM
     orm_image = Image.open(texture_name)
 
